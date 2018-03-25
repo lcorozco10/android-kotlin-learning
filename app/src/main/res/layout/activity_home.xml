@@ -18,6 +18,7 @@
         android:contentDescription="@string/todo" />
 
     <EditText
+        android:id="@+id/edtUserName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
@@ -26,6 +27,7 @@
         android:inputType="textPersonName" />
 
     <EditText
+        android:id="@+id/edtPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"

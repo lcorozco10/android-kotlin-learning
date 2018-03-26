@@ -5,4 +5,8 @@
     <string name="login">Login</string>
     <string name="todo">TODO</string>
     <string name="saludo">Soy un texto</string>
+    <string name="you_wrote">Hello </string>
+    <string name="some_text">some text</string>
+    <string name="back">Back</string>
+    <string name="send">Send</string>
 </resources>

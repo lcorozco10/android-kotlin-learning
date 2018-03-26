@@ -7,7 +7,6 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import kotlinx.android.synthetic.main.activity_principal.*
 
 class HomeActivity : AppCompatActivity() {
 
@@ -27,7 +26,7 @@ class HomeActivity : AppCompatActivity() {
         btnLogin.setOnClickListener{
             if (edtUserName.text.toString() == "lcorozco" && edtPassword.text.toString() == "123456" ) {
                 val intent = Intent( applicationContext, PrincipalActivity::class.java)
-                startActivity(intent);
+                startActivity(intent)
             }else{
                 textInfo.text = "UserName ${edtUserName.text} is invalid"
             }

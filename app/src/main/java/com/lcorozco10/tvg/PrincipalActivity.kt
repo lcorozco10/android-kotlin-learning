@@ -1,5 +1,6 @@
 package com.lcorozco10.tvg
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -18,6 +19,7 @@ class PrincipalActivity : AppCompatActivity(),View.OnClickListener {
     private lateinit var txtTitle:TextView
 
 
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_principal)
@@ -27,8 +29,12 @@ class PrincipalActivity : AppCompatActivity(),View.OnClickListener {
         textValue = findViewById(R.id.txtValue)
         txtTitle = findViewById(R.id.txtTitle)
 
-       // var edtUserName:EditText = findViewById(R.id.edtUserName)
-        //txtTitle.text = edtUserName.text
+        var extras = intent.extras
+        if (extras!= null){
+            var user = extras["Username"]
+            txtTitle.text = "${txtTitle.text} $user"
+        }
+
         textValue.text = "Nada por ahora"
 
         btnSend.setOnClickListener(this)
@@ -40,7 +46,7 @@ class PrincipalActivity : AppCompatActivity(),View.OnClickListener {
     override fun onClick(p0: View?) {
         when {
             p0?.id ==R.id.btnBack -> {
-                val intent = Intent( application, HomeActivity::class.java)
+                val intent = Intent( this, HomeActivity::class.java)
                 startActivity(intent)
             }
             p0?.id == R.id.btnSend -> textValue.text = edtSomeText.text.toString()

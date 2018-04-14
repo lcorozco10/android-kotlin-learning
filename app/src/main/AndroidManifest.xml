@@ -23,7 +23,7 @@
             android:name=".LoginActivity"
             android:theme="@style/NoBar"
             android:noHistory="true"
-            
+
             >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

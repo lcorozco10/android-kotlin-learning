@@ -70,7 +70,7 @@ class MainActivity : AppCompatActivity(),View.OnClickListener, SensorEventListen
         nextButton = findViewById(R.id.nextButton)
 
         backButton.setOnClickListener(this)
-        backButton.setOnClickListener(this)
+        nextButton.setOnClickListener(this)
         locationButton.setOnClickListener(this)
     }
 
@@ -100,10 +100,14 @@ class MainActivity : AppCompatActivity(),View.OnClickListener, SensorEventListen
 
                 try {
                     // Request location updates
-                    locationManager?.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0L, 0f, locationListener);
+                    locationManager?.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0L, 0f, locationListener)
                 } catch (ex: SecurityException) {
-                    Log.d("myTag", "Security Exception, no location available");
+                    Log.d("myTag", "Security Exception, no location available")
                 }
+            }
+            p0?.id == R.id.nextButton ->{
+                val intent = Intent(this, ListViewActivity::class.java)
+                startActivity(intent)
             }
             else -> proximityValueTextView.text = "Nada"
         }

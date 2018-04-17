@@ -43,6 +43,10 @@ class RecipeAdapter(private val context: Context,
         // 3
         Picasso.get().load(recipe.imageUrl).placeholder(R.mipmap.ic_launcher).into(thumbnailImageView)
 
+        val subtitleTypeFace = ResourcesCompat.getFont(context, R.font.indie_flower)
+        subtitleTextView.typeface = subtitleTypeFace
+
+
         return rowView
     }
 

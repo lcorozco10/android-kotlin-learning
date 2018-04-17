@@ -4,5 +4,6 @@
     <color name="colorPrimaryDark">#222831</color>
     <color name="colorAccent">#393E46</color>
     <color name="colorTest">#EAEAEA</color>
+    <color name="itemImageBackground">#606470</color>
 
 </resources>

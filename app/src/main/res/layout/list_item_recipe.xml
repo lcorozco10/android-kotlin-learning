@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageViewIcon"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_weight="2"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="@string/todo"
+        android:tooltipText="TVG"
+        android:layout_margin="0dp"
+        android:padding ="0dp"
+        android:background="@color/itemImageBackground"
+        android:src="@drawable/tvguidelogo"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        >
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:padding="5dp"
+            android:text="Title" />
+        <TextView
+            android:id="@+id/subTitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:text="Sub title" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/detailTextView"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="Detail" />
+
+</LinearLayout>

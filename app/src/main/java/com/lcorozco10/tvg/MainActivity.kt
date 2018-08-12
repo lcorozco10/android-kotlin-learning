@@ -29,8 +29,11 @@ class MainActivity : AppCompatActivity(),View.OnClickListener, SensorEventListen
     private lateinit var backButton:Button
     private lateinit var locationButton:Button
     private lateinit var nextButton:Button
+    private lateinit var linearLayoutButton:Button
+    private lateinit var frameLayoutButton:Button
+    private lateinit var tableLayoutButton:Button
+    private lateinit var relativeExampleButton:Button
 
-    private lateinit var edtSomeText:EditText
 
     private lateinit var proximityValueTextView:TextView
     private lateinit var welcomeTextView:TextView
@@ -68,10 +71,20 @@ class MainActivity : AppCompatActivity(),View.OnClickListener, SensorEventListen
         backButton = findViewById(R.id.backButton)
         locationButton = findViewById(R.id.locationButton)
         nextButton = findViewById(R.id.nextButton)
+        relativeExampleButton = findViewById(R.id.RelativeExampleButton)
+        linearLayoutButton = findViewById(R.id.LinearLayoutButton)
+        frameLayoutButton = findViewById(R.id.FrameLayoutButton)
+        tableLayoutButton = findViewById(R.id.TableLayoutButton)
+
 
         backButton.setOnClickListener(this)
         nextButton.setOnClickListener(this)
         locationButton.setOnClickListener(this)
+        linearLayoutButton.setOnClickListener(this)
+        tableLayoutButton.setOnClickListener(this)
+        frameLayoutButton.setOnClickListener(this)
+        relativeExampleButton.setOnClickListener(this)
+
     }
 
     override fun onResume() {
@@ -108,6 +121,26 @@ class MainActivity : AppCompatActivity(),View.OnClickListener, SensorEventListen
             p0?.id == R.id.nextButton ->{
                 val intent = Intent(this, ListViewActivity::class.java)
                 startActivity(intent)
+            }
+            p0?.id == R.id.LinearLayoutButton ->{
+                val  intent =  Intent(this,LinearLayoutExample::class.java)
+                startActivity(intent)
+
+            }
+            p0?.id == R.id.FrameLayoutButton ->{
+                val  intent =  Intent(this,FrameLayoutExample::class.java)
+                startActivity(intent)
+
+            }
+            p0?.id == R.id.TableLayoutButton ->{
+                val  intent =  Intent(this,TableLayoutExample::class.java)
+                startActivity(intent)
+
+            }
+            p0?.id == R.id.RelativeExampleButton ->{
+                val  intent =  Intent(this,RelativeLayoutExample::class.java)
+                startActivity(intent)
+
             }
             else -> proximityValueTextView.text = "Nada"
         }

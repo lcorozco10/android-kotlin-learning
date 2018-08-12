@@ -12,4 +12,5 @@
     <string name="InvaliUser">Invalid user</string>
     <string name="userNameError">Not a valid username!</string>
     <string name="PasswordError">Not a valid password!</string>
+    <string name="CounterText">Counter:</string>
 </resources>

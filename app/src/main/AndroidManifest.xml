@@ -33,7 +33,8 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".LinearLayoutExample" />
         <activity android:name=".TableLayoutExample" />
-        <activity android:name=".FrameLayoutExample"></activity>
+        <activity android:name=".FrameLayoutExample" />
+        <activity android:name=".RelativeLayoutExample"></activity>
     </application>
 
 </manifest>

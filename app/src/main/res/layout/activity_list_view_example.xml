@@ -4,43 +4,37 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LinearLayoutExample"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
-    android:layout_gravity="right">
+    android:weightSum="10"
+    >
 
-    <!--<EditText-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:hint="To" />-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:hint="To" />
 
-    <!--<EditText-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:hint="Subject" />-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:hint="Subject" />
 
-    <!--<EditText-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="0dp"-->
-        <!--android:layout_weight="1"-->
-        <!--android:gravity="top"-->
-        <!--android:hint="message" />-->
-
-    <!--<Button-->
-        <!--android:layout_width="100dp"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_gravity="right"-->
-        <!--android:text="@string/send" />-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8.5"
+        android:gravity="top"
+        android:hint="message" />
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:layout_weight="0.5"
+        android:layout_gravity="right"
+        android:text="@string/send" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button" />
+
 </LinearLayout>

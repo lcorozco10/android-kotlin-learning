@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RelativeLayoutExample">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/CounterText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/CounterText"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/CounterValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="5"
+            android:textSize="75dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/IncreaseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="75dp"
+            android:text="+" />
+        <android.support.v4.widget.Space
+            android:layout_width="75dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/DecreaseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:textSize="75dp"
+            android:text="-" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical|bottom">
+
+        <Button
+            android:id="@+id/ResetButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="Reset" />
+    </LinearLayout>
+
+</RelativeLayout>

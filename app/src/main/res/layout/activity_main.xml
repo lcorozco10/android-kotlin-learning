@@ -43,10 +43,9 @@
         android:id="@+id/locationButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
-        android:layout_marginEnd="133dp"
-        android:layout_marginTop="264dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="137dp"
         android:text="Get Location" />
 
     <TextView
@@ -66,5 +65,40 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:text="Next" />
+
+    <Button
+        android:id="@+id/RelativeExampleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="188dp"
+        android:layout_marginEnd="13dp"
+        android:text="Relative Example" />
+
+    <Button
+        android:id="@+id/TableLayoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/RelativeExampleButton"
+        android:layout_toEndOf="@+id/FrameLayoutButton"
+        android:text="TableLayout" />
+
+    <Button
+        android:id="@+id/FrameLayoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/RelativeExampleButton"
+        android:text="FremeLayout" />
+
+    <Button
+        android:id="@+id/LinearLayoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="249dp"
+        android:text="LinearLayout" />
 
 </RelativeLayout>

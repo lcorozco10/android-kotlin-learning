@@ -2,6 +2,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.lcorozco10.tvg">
 
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <uses-permission
+        android:name="android.hardware.sensor.proximity"
+        android:required="true" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,13 +19,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".HomeActivity">
+        <activity
+            android:name=".LoginActivity"
+            android:noHistory="true"
+            android:theme="@style/NoBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ListViewActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".LinearLayoutExample" />
+        <activity android:name=".TableLayoutExample" />
+        <activity android:name=".FrameLayoutExample" />
+        <activity android:name=".RelativeLayoutExample"></activity>
     </application>
 
 </manifest>

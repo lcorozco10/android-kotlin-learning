@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">TVG</string>
+    <string name="username">Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="login">Iniciar sesion</string>
+    <string name="todo">Hacer</string>
+    <string name="linkSignup">No tienes cuenta? Crea una</string>
+    <string name="you_wrote">Hola </string>
+    <string name="some_text">Algun texto</string>
+    <string name="back">Regresar</string>
+    <string name="send">Enviar</string>
+    <string name="InvaliUser">Usuario Invalido</string>
+    <string name="userNameError">No es un usuario valido!</string>
+    <string name="PasswordError">No es una contraseña valida!</string>
+</resources>

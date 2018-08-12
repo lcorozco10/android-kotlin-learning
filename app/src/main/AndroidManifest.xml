@@ -21,10 +21,8 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".LoginActivity"
-            android:theme="@style/NoBar"
             android:noHistory="true"
-
-            >
+            android:theme="@style/NoBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -32,7 +30,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".ListViewActivity" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".LinearLayoutExample" />
+        <activity android:name=".TableLayoutExample" />
+        <activity android:name=".FrameLayoutExample"></activity>
     </application>
 
 </manifest>

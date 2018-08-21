@@ -34,7 +34,9 @@
         <activity android:name=".LinearLayoutExample" />
         <activity android:name=".TableLayoutExample" />
         <activity android:name=".FrameLayoutExample" />
-        <activity android:name=".RelativeLayoutExample"></activity>
+        <activity android:name=".RelativeLayoutExample" />
+        <activity android:name=".RelativeLayout2Example" />
+        <activity android:name=".ConstraintLayoutExample"></activity>
     </application>
 
 </manifest>

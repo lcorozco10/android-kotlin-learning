@@ -73,7 +73,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_marginBottom="188dp"
-        android:layout_marginEnd="13dp"
+        android:layout_marginEnd="12dp"
         android:text="Relative Example" />
 
     <Button
@@ -96,9 +96,25 @@
         android:id="@+id/LinearLayoutButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="249dp"
+        android:layout_centerInParent="true"
         android:text="LinearLayout" />
+
+    <Button
+        android:id="@+id/RelativeLayoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="103dp"
+        android:layout_toEndOf="@+id/proximityTitleTextView"
+        android:text="RelativeLayout" />
+
+    <Button
+        android:id="@+id/ContraintLayoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/RelativeLayoutButton"
+        android:layout_marginEnd="22dp"
+        android:text="ContraintLayout" />
 
 </RelativeLayout>

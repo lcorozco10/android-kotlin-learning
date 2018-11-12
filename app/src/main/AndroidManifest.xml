@@ -23,11 +23,6 @@
             android:name=".LoginActivity"
             android:noHistory="true"
             android:theme="@style/NoBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".ListViewActivity" />
         <activity android:name=".MainActivity" />
@@ -36,7 +31,14 @@
         <activity android:name=".FrameLayoutExample" />
         <activity android:name=".RelativeLayoutExample" />
         <activity android:name=".RelativeLayout2Example" />
-        <activity android:name=".ConstraintLayoutExample"></activity>
+        <activity android:name=".ConstraintLayoutExample" />
+        <activity android:name=".ScrollView">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

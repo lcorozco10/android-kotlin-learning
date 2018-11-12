@@ -27,10 +27,14 @@ class AlertDialog : AppCompatActivity(), View.OnClickListener {
         alertDialogBuilder.setNegativeButton("No"){dialogInterface, i ->
             Toast.makeText(this,"Nop.",Toast.LENGTH_SHORT).show()
         }
+
+        alertDialogBuilder.setNeutralButton("Cancel"){_,_ ->
+            Toast.makeText(applicationContext,"You cancelled the dialog.",Toast.LENGTH_SHORT).show()
+        }
         alertDialogBuilder.setIcon(R.drawable.logotv2)
         //alertDialogBuilder.setCancelable(false)
         alertDialogBuilder.setOnCancelListener { dialogInterface ->
-            Toast.makeText(this,"Cancel.",Toast.LENGTH_SHORT).show()
+            Toast.makeText(this,"You out the dialog.",Toast.LENGTH_SHORT).show()
         }
 
         alertDialog = alertDialogBuilder.create()

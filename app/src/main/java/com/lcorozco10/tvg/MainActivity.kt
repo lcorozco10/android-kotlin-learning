@@ -21,6 +21,7 @@ import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import android.widget.RelativeLayout
 import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -33,6 +34,8 @@ class MainActivity : AppCompatActivity(),View.OnClickListener, SensorEventListen
     private lateinit var frameLayoutButton:Button
     private lateinit var tableLayoutButton:Button
     private lateinit var relativeExampleButton:Button
+    private lateinit var relativeExample2Button:Button
+    private lateinit var contraintLayoutButton:Button
 
 
     private lateinit var proximityValueTextView:TextView
@@ -75,6 +78,8 @@ class MainActivity : AppCompatActivity(),View.OnClickListener, SensorEventListen
         linearLayoutButton = findViewById(R.id.LinearLayoutButton)
         frameLayoutButton = findViewById(R.id.FrameLayoutButton)
         tableLayoutButton = findViewById(R.id.TableLayoutButton)
+        relativeExample2Button = findViewById(R.id.RelativeLayoutButton)
+        contraintLayoutButton = findViewById(R.id.ContraintLayoutButton)
 
 
         backButton.setOnClickListener(this)
@@ -84,6 +89,8 @@ class MainActivity : AppCompatActivity(),View.OnClickListener, SensorEventListen
         tableLayoutButton.setOnClickListener(this)
         frameLayoutButton.setOnClickListener(this)
         relativeExampleButton.setOnClickListener(this)
+        relativeExample2Button.setOnClickListener(this)
+        contraintLayoutButton.setOnClickListener(this)
 
     }
 
@@ -141,6 +148,14 @@ class MainActivity : AppCompatActivity(),View.OnClickListener, SensorEventListen
                 val  intent =  Intent(this,RelativeLayoutExample::class.java)
                 startActivity(intent)
 
+            }
+            p0?.id == R.id.RelativeLayoutButton ->{
+                val  intent =  Intent(this,RelativeLayout2Example::class.java)
+                startActivity(intent)
+            }
+            p0?.id == R.id.ContraintLayoutButton ->{
+                val  intent =  Intent(this,ConstraintLayoutExample::class.java)
+                startActivity(intent)
             }
             else -> proximityValueTextView.text = "Nada"
         }

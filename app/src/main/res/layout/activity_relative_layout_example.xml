@@ -56,12 +56,26 @@
         android:orientation="vertical"
         android:gravity="center_vertical|bottom">
 
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CheckBox" />
+
         <Button
             android:id="@+id/ResetButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="25dp"
-            android:text="Reset" />
+            android:text="Reset"
+            android:textSize="25dp" />
     </LinearLayout>
 
 </RelativeLayout>

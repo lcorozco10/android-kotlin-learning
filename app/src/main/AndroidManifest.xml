@@ -22,7 +22,7 @@
         <activity
             android:name=".LoginActivity"
             android:noHistory="true"
-            android:theme="@style/NoBar"></activity>
+            android:theme="@style/NoBar" />
         <activity android:name=".ListViewActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".LinearLayoutExample" />
@@ -31,9 +31,9 @@
         <activity android:name=".RelativeLayoutExample" />
         <activity android:name=".RelativeLayout2Example" />
         <activity android:name=".ConstraintLayoutExample" />
-        <activity android:name=".ScrollView">
-        </activity>
-        <activity android:name=".AlertDialog">
+        <activity android:name=".ScrollView"></activity>
+        <activity android:name=".AlertDialog"/>
+        <activity android:name=".AutoComplete">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -49,6 +49,5 @@ class WebViewActivity : AppCompatActivity() {
 
         webViewSample = findViewById(R.id.webViewSample)
         webViewSample.loadUrl("https://google.com.ni")
-        )
     }
 }

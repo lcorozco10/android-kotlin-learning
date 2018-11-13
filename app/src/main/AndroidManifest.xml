@@ -31,9 +31,11 @@
         <activity android:name=".RelativeLayoutExample" />
         <activity android:name=".RelativeLayout2Example" />
         <activity android:name=".ConstraintLayoutExample" />
-        <activity android:name=".ScrollView"></activity>
-        <activity android:name=".AlertDialog"/>
+        <activity android:name=".ScrollView" />
+        <activity android:name=".AlertDialog" />
         <activity android:name=".AutoComplete">
+        </activity>
+        <activity android:name=".WebViewActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

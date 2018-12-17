@@ -7,7 +7,6 @@ import android.os.Bundle
 import android.support.v4.app.ActivityCompat
 import android.support.v4.content.ContextCompat
 import android.webkit.WebView
-import android.webkit.WebViewClient
 
 class WebViewActivity : AppCompatActivity() {
 

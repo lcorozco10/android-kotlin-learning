@@ -33,9 +33,9 @@
         <activity android:name=".ConstraintLayoutExample" />
         <activity android:name=".ScrollView" />
         <activity android:name=".AlertDialog" />
-        <activity android:name=".AutoComplete">
-        </activity>
-        <activity android:name=".WebViewActivity">
+        <activity android:name=".AutoComplete"></activity>
+        <activity android:name=".WebViewActivity"></activity>
+        <activity android:name=".FragmentActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

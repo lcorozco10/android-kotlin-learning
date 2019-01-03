@@ -44,6 +44,7 @@ class RelativeLayoutExample : AppCompatActivity(), View.OnClickListener {
                 var currentValue = counterValueText?.text?.toString()?.toInt()?:0
                 counterValueText.text = (--currentValue).toString()
             }
+
         }
     }
 }

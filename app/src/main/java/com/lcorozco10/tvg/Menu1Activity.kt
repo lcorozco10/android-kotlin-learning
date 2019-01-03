@@ -30,6 +30,12 @@ class Menu1Activity : AppCompatActivity() {
             item?.itemId == R.id.option3 -> {
                 Toast.makeText(applicationContext,"Option 3",Toast.LENGTH_SHORT).show()
             }
+            item?.itemId == R.id.subOption1 -> {
+                Toast.makeText(applicationContext,"SubOption 1",Toast.LENGTH_SHORT).show()
+            }
+            item?.itemId == R.id.subOption2 -> {
+                Toast.makeText(applicationContext,"SubOption 2",Toast.LENGTH_SHORT).show()
+            }
 
         }
 

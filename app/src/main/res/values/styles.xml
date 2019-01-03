@@ -8,11 +8,19 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="NoBar" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="NoBar" parent="Theme.AppCompat.DayNight">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="Numbers">
+        <item name="android:textSize">25dp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="MyCustomTheme" parent="Theme.AppCompat.Light">
+
     </style>
 
 </resources>

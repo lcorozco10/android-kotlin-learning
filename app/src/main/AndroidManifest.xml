@@ -38,7 +38,8 @@
         <activity android:name=".Style" />
         <activity android:name=".Menu1Activity" />
         <activity android:name=".TabActivity" />
-        <activity android:name=".DatePickerActivity">
+        <activity android:name=".DatePickerActivity" />
+        <activity android:name=".RatingBarActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

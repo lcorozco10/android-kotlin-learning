@@ -9,9 +9,9 @@ import android.widget.Toast
 
 class AlertDialog : AppCompatActivity(), View.OnClickListener {
 
-    lateinit var openDialogButton:Button
+    lateinit var openDialogButton: Button
     lateinit var alertDialogBuilder: AlertDialog.Builder
-    lateinit var alertDialog:AlertDialog
+    lateinit var alertDialog: AlertDialog
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,20 +21,20 @@ class AlertDialog : AppCompatActivity(), View.OnClickListener {
         alertDialogBuilder = AlertDialog.Builder(this)
         alertDialogBuilder.setTitle("Bad Alert XD.")
         alertDialogBuilder.setMessage("Are you ok?")
-        alertDialogBuilder.setPositiveButton("Yes"){ dialogInterface, i ->
-            Toast.makeText(this,"Ok.",Toast.LENGTH_SHORT).show()
+        alertDialogBuilder.setPositiveButton("Yes") { dialogInterface, i ->
+            Toast.makeText(this, "Ok.", Toast.LENGTH_SHORT).show()
         }
-        alertDialogBuilder.setNegativeButton("No"){dialogInterface, i ->
-            Toast.makeText(this,"Nop.",Toast.LENGTH_SHORT).show()
+        alertDialogBuilder.setNegativeButton("No") { dialogInterface, i ->
+            Toast.makeText(this, "Nop.", Toast.LENGTH_SHORT).show()
         }
 
-        alertDialogBuilder.setNeutralButton("Cancel"){_,_ ->
-            Toast.makeText(applicationContext,"You cancelled the dialog.",Toast.LENGTH_SHORT).show()
+        alertDialogBuilder.setNeutralButton("Cancel") { _, _ ->
+            Toast.makeText(applicationContext, "You cancelled the dialog.", Toast.LENGTH_SHORT).show()
         }
         alertDialogBuilder.setIcon(R.drawable.logotv2)
         //alertDialogBuilder.setCancelable(false)
         alertDialogBuilder.setOnCancelListener { dialogInterface ->
-            Toast.makeText(this,"You out the dialog.",Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "You out the dialog.", Toast.LENGTH_SHORT).show()
         }
 
         alertDialog = alertDialogBuilder.create()
@@ -44,7 +44,7 @@ class AlertDialog : AppCompatActivity(), View.OnClickListener {
 
     override fun onClick(p0: View?) {
         when {
-            p0?.id == R.id.openDialogButton->{
+            p0?.id == R.id.openDialogButton -> {
                 alertDialog.show()
             }
         }

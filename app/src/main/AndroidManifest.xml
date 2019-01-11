@@ -36,14 +36,15 @@
         <activity android:name=".AutoComplete" />
         <activity android:name=".WebViewActivity" />
         <activity android:name=".Style" />
-        <activity android:name=".Menu1Activity" >
+        <activity android:name=".Menu1Activity" />
+        <activity android:name=".TabActivity" />
+        <activity android:name=".DatePickerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TabActivity" />
     </application>
 
 </manifest>

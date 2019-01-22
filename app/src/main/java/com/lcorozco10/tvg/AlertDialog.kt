@@ -21,10 +21,10 @@ class AlertDialog : AppCompatActivity(), View.OnClickListener {
         alertDialogBuilder = AlertDialog.Builder(this)
         alertDialogBuilder.setTitle("Bad Alert XD.")
         alertDialogBuilder.setMessage("Are you ok?")
-        alertDialogBuilder.setPositiveButton("Yes") { dialogInterface, i ->
+        alertDialogBuilder.setPositiveButton("Yes") { _, _ ->
             Toast.makeText(this, "Ok.", Toast.LENGTH_SHORT).show()
         }
-        alertDialogBuilder.setNegativeButton("No") { dialogInterface, i ->
+        alertDialogBuilder.setNegativeButton("No") { _, _ ->
             Toast.makeText(this, "Nop.", Toast.LENGTH_SHORT).show()
         }
 
@@ -33,12 +33,12 @@ class AlertDialog : AppCompatActivity(), View.OnClickListener {
         }
         alertDialogBuilder.setIcon(R.drawable.logotv2)
         //alertDialogBuilder.setCancelable(false)
-        alertDialogBuilder.setOnCancelListener { dialogInterface ->
+        alertDialogBuilder.setOnCancelListener {
             Toast.makeText(this, "You out the dialog.", Toast.LENGTH_SHORT).show()
         }
 
         alertDialog = alertDialogBuilder.create()
-        openDialogButton = findViewById(R.id.openDialogButton)
+        openDialogButton = this.findViewById(R.id.openDialogButton)
         openDialogButton.setOnClickListener(this)
     }
 

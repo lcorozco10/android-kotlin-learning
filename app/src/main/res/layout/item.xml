@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/pictureImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/nameTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="1"
+        android:text="Name:"
+        app:layout_constraintStart_toEndOf="@+id/pictureImageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="1"
+        android:hint="Luis Orozco"
+        app:layout_constraintStart_toEndOf="@+id/eyeColorTitleTextView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ageTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Age:"
+        app:layout_constraintStart_toStartOf="@+id/nameTitleTextView"
+        app:layout_constraintTop_toBottomOf="@+id/nameTitleTextView" />
+
+    <TextView
+        android:id="@+id/ageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:hint="29"
+        app:layout_constraintStart_toStartOf="@+id/nameTextView"
+        app:layout_constraintTop_toBottomOf="@+id/nameTextView" />
+
+    <TextView
+        android:id="@+id/eyeColorTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="EyeColor:"
+        app:layout_constraintStart_toStartOf="@+id/ageTitleTextView"
+        app:layout_constraintTop_toBottomOf="@+id/ageTitleTextView" />
+
+    <TextView
+        android:id="@+id/eyeColorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:hint="Blue"
+        app:layout_constraintStart_toStartOf="@+id/ageTextView"
+        app:layout_constraintTop_toBottomOf="@+id/ageTextView" />
+
+    <TextView
+        android:id="@+id/companyTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Company:"
+        app:layout_constraintStart_toStartOf="@+id/eyeColorTitleTextView"
+        app:layout_constraintTop_toBottomOf="@+id/eyeColorTitleTextView" />
+
+    <TextView
+        android:id="@+id/companyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:hint="Developer Inc."
+        app:layout_constraintStart_toStartOf="@+id/eyeColorTextView"
+        app:layout_constraintTop_toBottomOf="@+id/eyeColorTextView" />
+
+    <TextView
+        android:id="@+id/phoneTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Phone:"
+        app:layout_constraintStart_toStartOf="@+id/companyTitleTextView"
+        app:layout_constraintTop_toBottomOf="@+id/companyTitleTextView" />
+
+    <TextView
+        android:id="@+id/phoneTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:hint="258987485"
+        app:layout_constraintStart_toStartOf="@+id/companyTextView"
+        app:layout_constraintTop_toBottomOf="@+id/companyTextView" />
+
+    <TextView
+        android:id="@+id/registeredTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Registered:"
+        app:layout_constraintStart_toStartOf="@+id/phoneTitleTextView"
+        app:layout_constraintTop_toBottomOf="@+id/phoneTitleTextView" />
+
+    <TextView
+        android:id="@+id/registeredTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:hint="Friday, September 25, 2015 12:16 PM"
+        app:layout_constraintStart_toStartOf="@+id/phoneTextView"
+        app:layout_constraintTop_toBottomOf="@+id/phoneTextView" />
+
+</android.support.constraint.ConstraintLayout>

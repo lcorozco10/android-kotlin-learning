@@ -6,8 +6,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="windowActionBar">true</item>
-        <item name="windowNoTitle">false</item>
+
     </style>
 
     <style name="NoBar" parent="Theme.AppCompat.DayNight">
@@ -19,6 +18,10 @@
     <style name="Numbers">
         <item name="android:textSize">25dp</item>
         <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+    <style name="NewAppTheme" parent="AppTheme">
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">false</item>
     </style>
 
 </resources>

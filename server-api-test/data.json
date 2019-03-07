@@ -1,0 +1,152 @@
+[
+  {
+    "id": "5c639559b9dca0dd440858cc",
+    "picture": "http://placehold.it/380x380",
+    "age": 23,
+    "eyeColor": "blue",
+    "name": {
+      "first": "Reyes",
+      "last": "Sheppard"
+    },
+    "company": "KONGENE",
+    "email": "reyes.sheppard@kongene.com",
+    "phone": "+1 (933) 580-3397",
+    "registered": "Friday, September 25, 2015 12:16 PM",
+    "favoriteFruit": "strawberry"
+  },
+  {
+    "id": "5c639559294b5ee733f0e822",
+    "picture": "http://placehold.it/380x380",
+    "age": 34,
+    "eyeColor": "brown",
+    "name": {
+      "first": "Parks",
+      "last": "Mcneil"
+    },
+    "company": "CEPRENE",
+    "email": "parks.mcneil@ceprene.info",
+    "phone": "+1 (920) 533-2117",
+    "registered": "Saturday, July 9, 2016 9:35 PM",
+    "favoriteFruit": "apple"
+  },
+  {
+    "id": "5c639559cedef75e0de3b150",
+    "picture": "http://placehold.it/380x380",
+    "age": 20,
+    "eyeColor": "blue",
+    "name": {
+      "first": "Burns",
+      "last": "Rutledge"
+    },
+    "company": "DATAGEN",
+    "email": "burns.rutledge@datagen.org",
+    "phone": "+1 (911) 472-3571",
+    "registered": "Sunday, May 21, 2017 3:41 AM",
+    "favoriteFruit": "strawberry"
+  },
+  {
+    "id": "5c639559aa2f7fa7292c2374",
+    "picture": "http://placehold.it/380x380",
+    "age": 21,
+    "eyeColor": "blue",
+    "name": {
+      "first": "Vance",
+      "last": "Pratt"
+    },
+    "company": "BLUPLANET",
+    "email": "vance.pratt@bluplanet.us",
+    "phone": "+1 (856) 415-3370",
+    "registered": "Tuesday, December 18, 2018 12:30 PM",
+    "favoriteFruit": "apple"
+  },
+  {
+    "id": "5c6395598ecb49bd345bd643",
+    "picture": "http://placehold.it/380x380",
+    "age": 36,
+    "eyeColor": "brown",
+    "name": {
+      "first": "Holt",
+      "last": "Powell"
+    },
+    "company": "ANIMALIA",
+    "email": "holt.powell@animalia.me",
+    "phone": "+1 (953) 409-2813",
+    "registered": "Thursday, February 9, 2017 11:56 PM",
+    "favoriteFruit": "strawberry"
+  },
+  {
+    "id": "5c6395597e5bb8a158c54971",
+    "picture": "http://placehold.it/380x380",
+    "age": 33,
+    "eyeColor": "green",
+    "name": {
+      "first": "Moreno",
+      "last": "Edwards"
+    },
+    "company": "MANGELICA",
+    "email": "moreno.edwards@mangelica.io",
+    "phone": "+1 (883) 442-2009",
+    "registered": "Sunday, September 17, 2017 12:32 PM",
+    "favoriteFruit": "banana"
+  },
+  {
+    "id": "5c639559548beb61a2063bf4",
+    "picture": "http://placehold.it/380x380",
+    "age": 39,
+    "eyeColor": "green",
+    "name": {
+      "first": "Jaclyn",
+      "last": "Price"
+    },
+    "company": "EYEWAX",
+    "email": "jaclyn.price@eyewax.ca",
+    "phone": "+1 (898) 544-2695",
+    "registered": "Sunday, March 22, 2015 7:04 PM",
+    "favoriteFruit": "apple"
+  },
+  {
+    "id": "5c639559daec5bfc3c94dd76",
+    "picture": "http://placehold.it/380x380",
+    "age": 34,
+    "eyeColor": "brown",
+    "name": {
+      "first": "Manning",
+      "last": "Bullock"
+    },
+    "company": "ACUSAGE",
+    "email": "manning.bullock@acusage.tv",
+    "phone": "+1 (991) 497-3327",
+    "registered": "Thursday, March 27, 2014 8:16 PM",
+    "favoriteFruit": "apple"
+  },
+  {
+    "id": "5c63955963bdda46395abf28",
+    "picture": "http://placehold.it/380x380",
+    "age": 24,
+    "eyeColor": "brown",
+    "name": {
+      "first": "Marisol",
+      "last": "Hubbard"
+    },
+    "company": "BIOHAB",
+    "email": "marisol.hubbard@biohab.biz",
+    "phone": "+1 (915) 540-2098",
+    "registered": "Wednesday, September 14, 2016 10:41 PM",
+    "favoriteFruit": "strawberry"
+  },
+  {
+    "id": "5c63955980d3090d73e65d3e",
+    "picture": "http://placehold.it/380x380",
+    "age": 24,
+    "eyeColor": "brown",
+    "name": {
+      "first": "Shepard",
+      "last": "Schultz"
+    },
+    "company": "MULTIFLEX",
+    "email": "shepard.schultz@multiflex.net",
+    "phone": "+1 (986) 538-2170",
+    "registered": "Monday, April 30, 2018 1:55 PM",
+    "favoriteFruit": "apple"
+  }
+]

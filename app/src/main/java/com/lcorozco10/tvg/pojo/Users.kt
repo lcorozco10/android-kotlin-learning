@@ -1,20 +1,22 @@
 package com.lcorozco10.tvg.pojo
 
+import com.google.gson.annotations.SerializedName
+
 data class Users(
-        val id: Int,
-        val picture: String,
-        val age: Int,
-        val eyeColor: String,
-        val names: Names,
-        val company: String,
-        val email: String,
-        val phone: String,
-        val registered: String,
-        val favoriteFruit: String
+        @SerializedName("id")val id: String,
+        @SerializedName("picture") val picture: String,
+        @SerializedName("age") val age: Int,
+        @SerializedName("eyeColor") val eyeColor: String,
+        @SerializedName("name") val names: Names,
+        @SerializedName("company") val company: String,
+        @SerializedName("email") val email: String,
+        @SerializedName("phone") val phone: String,
+        @SerializedName("registered") val registered: String,
+        @SerializedName("favoriteFruit") val favoriteFruit: String
 )
 
 data class Names(
-        val first: String,
-        val last: String
+        @SerializedName("first") val first: String,
+        @SerializedName("last")val last: String
 )
 

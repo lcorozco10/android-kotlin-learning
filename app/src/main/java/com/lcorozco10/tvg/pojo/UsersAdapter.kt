@@ -9,7 +9,7 @@ import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.item.view.*
 
 
-class UsersAdapter(val array: ArrayList<Users>) : RecyclerView.Adapter<UsersAdapter.ViewHolder>() {
+class UsersAdapter(private val array: ArrayList<Users>) : RecyclerView.Adapter<UsersAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): ViewHolder {
         val v = LayoutInflater.from(parent?.context).inflate(R.layout.item, parent, false)
@@ -31,14 +31,14 @@ class UsersAdapter(val array: ArrayList<Users>) : RecyclerView.Adapter<UsersAdap
         return array.size
     }
 
-    class ViewHolder (view: View) : RecyclerView.ViewHolder(view) {
+    class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         // Holds the TextView that will add each animal to
-        val picture = view. pictureImageView!!
-        val name = view. nameTextView!!
-        val age = view. ageTextView!!
-        val eyeColor = view. eyeColorTextView!!
-        val company = view. companyTextView!!
-        val phone = view. phoneTextView!!
-        val registered = view. registeredTextView!!
+        val picture = view.pictureImageView!!
+        val name = view.nameTextView!!
+        val age = view.ageTextView!!
+        val eyeColor = view.eyeColorTextView!!
+        val company = view.companyTextView!!
+        val phone = view.phoneTextView!!
+        val registered = view.registeredTextView!!
     }
 }

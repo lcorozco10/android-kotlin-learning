@@ -3,7 +3,7 @@ package com.lcorozco10.tvg.pojo
 import com.google.gson.annotations.SerializedName
 
 data class Users(
-        @SerializedName("id")val id: String,
+        @SerializedName("id") val id: String,
         @SerializedName("picture") val picture: String,
         @SerializedName("age") val age: Int,
         @SerializedName("eyeColor") val eyeColor: String,
@@ -17,6 +17,6 @@ data class Users(
 
 data class Names(
         @SerializedName("first") val first: String,
-        @SerializedName("last")val last: String
+        @SerializedName("last") val last: String
 )
 

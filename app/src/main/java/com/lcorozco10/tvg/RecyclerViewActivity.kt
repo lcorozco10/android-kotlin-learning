@@ -15,7 +15,7 @@ import io.reactivex.schedulers.Schedulers
 
 class RecyclerViewActivity : AppCompatActivity() {
 
-    lateinit var recycleView:RecyclerView
+    lateinit var recycleView: RecyclerView
     private val compositeDisposable: CompositeDisposable = CompositeDisposable()
 
 
@@ -31,11 +31,9 @@ class RecyclerViewActivity : AppCompatActivity() {
                 repository.GetUsers("test")
                         .observeOn(AndroidSchedulers.mainThread())
                         .subscribeOn(Schedulers.io())
-                        .subscribe ({
-                            result ->
-                            var data:ArrayList<Users> = ArrayList(result)
-
-                            var adapter = UsersAdapter(data!!)
+                        .subscribe({ result ->
+                            val data: ArrayList<Users> = ArrayList(result)
+                            val adapter = UsersAdapter(array = data)
                             recycleView.adapter = adapter
                             Log.d("Result", "There are ${data.first().picture} Java developers in Lagos")
                         }, { error ->

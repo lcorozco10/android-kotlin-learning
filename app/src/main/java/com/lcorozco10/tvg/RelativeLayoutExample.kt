@@ -31,19 +31,20 @@ class RelativeLayoutExample : AppCompatActivity(), View.OnClickListener {
     override fun onClick(p0: View?) {
 
         when {
-            p0?.id == R.id.ResetButton->{
+            p0?.id == R.id.ResetButton -> {
                 counterValueText.text = 0.toString()
             }
-            p0?.id ==R.id.IncreaseButton->{
+            p0?.id == R.id.IncreaseButton -> {
 
-                var currentValue = counterValueText?.text?.toString()?.toInt()?:0
+                var currentValue = counterValueText.text?.toString()?.toInt() ?: 0
                 counterValueText.text = (++currentValue).toString()
             }
-            p0?.id ==R.id.DecreaseButton->{
+            p0?.id == R.id.DecreaseButton -> {
 
-                var currentValue = counterValueText?.text?.toString()?.toInt()?:0
+                var currentValue = counterValueText.text?.toString()?.toInt() ?: 0
                 counterValueText.text = (--currentValue).toString()
             }
+
 
         }
     }

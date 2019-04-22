@@ -55,7 +55,10 @@ class UserPermissionActivity : AppCompatActivity(),View.OnClickListener  {
 
                         // No explanation needed, we can request the permission.
 
-                        ActivityCompat.requestPermissions(this,arrayOf(Manifest.permission.ACCESS_FINE_LOCATION),ACCESS_FINE_LOCATION_REQUEST_CODE)
+                        ActivityCompat.requestPermissions(this,
+                                arrayOf(Manifest.permission.ACCESS_FINE_LOCATION,
+                                        Manifest.permission.ACCESS_COARSE_LOCATION)
+                                ,ACCESS_FINE_LOCATION_REQUEST_CODE)
                         Log.d("REQUEST:", " $permission")
 
                         // MY_PERMISSIONS_REQUEST_READ_CONTACTS is an

@@ -114,10 +114,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20db0d41-b557-4fa3-b035-097f9d321a70" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lcorozco10/tvg/UserPermissionActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lcorozco10/tvg/UserPermissionActivity.kt" afterDir="false" />
-    </list>
+    <list default="true" id="20db0d41-b557-4fa3-b035-097f9d321a70" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
